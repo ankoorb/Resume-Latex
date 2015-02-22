@@ -1,0 +1,288 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Ankoor Bhagat													%
+% Data Science Resume: Use "XeLaTeX" Engine to generate PDF                                     % 
+% Use "LuaLaTeX" Engine for generating Git, Linkedin Symbols                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%==========================================
+% Preamble
+\documentclass[10pt,a4]{article}
+%==========================================
+
+%==========================================
+% Margins and some packages
+%==========================================
+\usepackage[left = 0.5in, right = 0.5in, top = 0.5in, bottom = 0.5in]{geometry}
+\pagenumbering{gobble} % "goggle" removes page numbering
+\usepackage{fancyhdr}
+\usepackage[dvips]{color}
+\usepackage[usenames, dvipsnames]{xcolor} % Allows the definition of hex colors
+%==========================================
+
+%==========================================
+% Referencing
+\usepackage{hyperref}
+%==========================================
+
+%==========================================
+% Symbols: Home, Phone, Email, Internet, Git, Linkedin
+%==========================================
+\usepackage{marvosym} 
+\usepackage{ifsym} 
+\usepackage{fontawesome}
+%\faTwitter{}
+%\faLinkedin{}
+%\faGithub{}
+%\faLinkedinSign{}
+%==========================================
+
+%==========================================
+% Font
+%==========================================
+\usepackage{fontspec}
+%\setmainfont{Helvetica Neue} 
+%\setmainfont{Arial}
+\setmainfont{Tahoma}
+%==========================================
+
+%==========================================
+% Define Color
+%==========================================
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{deep_blue}{rgb}{0,0.25,0.55}
+\definecolor{dark_blue}{rgb}{0,0.15,0.35}
+%\definecolor{myblue}{rgb}{0.0,0.45,0.55}
+\definecolor{myblue}{HTML}{007bb6} % Linkedin color
+\definecolor{drkgray}{rgb}{0.4,0.4,0.4}
+\definecolor{ltgray}{rgb}{0.9,0.9,0.9}
+\definecolor{shade}{HTML}{F5DD9D} % Peach color 
+%==========================================
+
+%==========================================
+% Square Bullet
+%==========================================
+\def\mydot{\textcolor{deep_blue}{\rule{0.75ex}{0.75ex}}}
+\def\myDot{\textcolor{drkgray}{\rule{0.75ex}{0.75ex}}}
+%==========================================
+
+%==========================================
+% Begin Document
+\begin{document}
+
+%==========================================
+% Page Numbering Style: i of n
+%==========================================
+%\usepackage{lastpage}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\pagestyle{fancy}
+%\fancyfoot[C]{}
+%\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+%==========================================
+
+%==========================================
+% Heading: Name
+%==========================================
+\vspace*{-1.5cm}
+\begin{center}
+%{\Large \bf \color{deep_blue} {A\large NKOOR} {B\large HAGAT}}
+{\Large \bf \color{deep_blue}ANKOOR BHAGAT}
+\vspace*{-0.20cm}
+\end{center}
+%==========================================
+
+
+\begin{small}
+%==========================================
+% Color Box, Address, Phone, Email, Website
+%==========================================
+
+\begin{tabbing}
+\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+
+
+%% With Color Box
+%\colorbox{shade}{
+%\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+%\textifsymbol{19}  & {\Telefon} +1 (949) 331-2374 \\  
+% {177 Exeter}  &  {{\Letter} {\color{drkgray}\href{mailto:ankooris@gmail.com}{ankooris@gmail.com}}} \\
+%Irvine, CA-92612 & {{\Mundus} {\color{drkgray}\href{http://ankoorb.blogspot.com}{http://ankoorb.blogspot.com}}} \\
+%\end{tabular*}}
+
+%% Without Color Box (With Linkedin, Github) - New
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+{\Telefon} +1 (949) 331-2374 &  {{\faGithub{}} {\color{drkgray}\href{https://github.com/ankoorb}{https://github.com/ankoorb}}}\\
+{{\Letter} {\color{drkgray}\href{mailto:ankooris@gmail.com}{ankooris@gmail.com}}} & {{\Mundus} {\color{drkgray}\href{http://ankoorb.blogspot.com}{http://ankoorb.blogspot.com}}} \\
+ \textifsymbol{19}  {177 Exeter, Irvine, CA-92612} & {\color{myblue}{{\faLinkedinSign{}}} {\color{drkgray}\href{http://www.linkedin.com/in/ankoorb}{http://www.linkedin.com/in/ankoorb}}}\\
+\end{tabular*}
+
+
+\end{tabbing}
+\vspace*{-0.75cm}
+%==========================================
+
+
+%==========================================
+%% Resume Body
+%==========================================
+
+
+%==========================================
+% Summary
+%==========================================
+\vspace{0.15cm}
+\subsection*{\color{dark_blue}SUMMARY}
+\vspace{-0.15cm}
+\hrule
+\vspace{0.1cm}
+A talented, passionate and self motivated data scientist. M.S, Ph.D. in Engineering. Proficient in using Python, R and MATLAB  
+\vspace{-0.35cm}
+%==========================================
+
+
+%==========================================
+% Keywords
+%==========================================
+\subsection*{\color{dark_blue}KEYWORDS}
+\vspace{-0.15cm}
+\hrule
+\vspace{0.1cm}
+\noindent {\bf Programming:} Python {\color{gray}(Pandas, NumPy, sciKit-learn)}, R, MATLAB, SQL {\color{gray}(Beginner)}, D3.js {\color{gray}(Beginner)} \vspace{-0.25cm}\\
+
+
+{\noindent Applied Machine Learning, Regression, Bayesian Data Analysis, Dimensionality Reduction, Optimization, Transportation Algorithms, Engineering Economics, Transportation Systems Analysis, Traffic Simulation, Emission and Air Dispersion Modeling
+
+}
+%==========================================
+
+
+%==========================================
+% Experience
+%==========================================
+\vspace{-0.35cm}
+\subsection*{\color{dark_blue}EXPERIENCE}
+\vspace{-0.15cm}
+\hrule
+\vspace{0.1cm}
+
+% 1st Experience
+{\bf Intern, {\color{drkgray}Sarakki Associates Inc., Santa Ana}}, {\em \color{drkgray}(Sept 2014 - Present)}
+\begin{itemize}
+\item[\mydot] Determined the revenue generating potential of Real-time Traffic Archival Data Management System project (Contract from University of Southern California)
+\end{itemize}
+
+% 2nd Experience
+\noindent {\bf Graduate Student Researcher\textbackslash Teaching Assistant, {\color{drkgray}University of California, Irvine}}, {\em \color{drkgray}(Jan 2009 - June 2014)}
+
+\begin{itemize}
+\item[\mydot] Coded R and Matlab scripts to estimate the temporal risk of accidents on I-710 and I-110 freeways by analyzing 3 years of Los Angeles County freeway vehicular accident data
+
+\item[\mydot] Developed network augmentation algorithm to reduce Origin Destination (OD) matrix estimation time, coded and implemented MATLAB scripts to process data and test calculations
+
+\item[\mydot] Estimated vehicular emissions from microscopic traffic simulation trajectories (60+ Gigabytes) for off-peak freight delivery scenarios
+
+\item[\mydot] Coded MATLAB scripts for processing dispersion model output (8700+ files) to analyze spatial and temporal impacts of air pollution from off-peak freight deliveries and found air pollutant concentrations increased due to atmospheric boundary layer effects
+
+\item[\mydot] Instructed undergraduate students in Economics, Statistics, Linear Regression, Linear Programming and Non-linear Optimization courses
+
+\end{itemize}
+
+% 3rd Experience
+\noindent{\bf Assistant Transportation Engineer, {\color{drkgray}LSA Associates, Riverside}}, {\em \color{drkgray}(Mar 2008 - Sept 2008)}
+\begin{itemize}
+\item[\mydot] Prepared Traffic Impact Analysis (TIA) reports, Environmental Impact Report (EIR) and performed intersection level of service (LOS) analysis
+\end{itemize}
+
+% 4th Experience
+\noindent {\bf Teaching Assistant, {\color{drkgray}University of California, Irvine}}, {\em \color{drkgray}(April 2007 - Dec 2007)}
+\begin{itemize}
+\item[\mydot] Taught Computer Aided Design, Highway Alignment and Design, and Engineering Mechanics courses to undergraduate students
+\end{itemize}
+%==========================================
+
+
+
+%==========================================
+% Education
+%==========================================
+\vspace{-0.55cm}
+\subsection*{\color{dark_blue}EDUCATION}
+\vspace{-0.15cm}
+\hrule
+\vspace{0.1cm}
+
+\begin{tabbing}
+xxxx\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+\>\begin{tabular*}{0.9\linewidth}{l@{\extracolsep{\fill}}r}
+
+{\bf Doctor of Philosophy} {\color{gray}in Civil Engineering} & {\it \color{gray} June 2014}\\
+{University of California, Irvine} & GPA 3.8  \\
+\vspace{-0.25cm}
+ & \\
+ 
+{\bf Master of Science} {\color{gray}in Civil Engineering} & {\it \color{gray} December 2007}\\
+{University of California, Irvine} &  GPA 3.6  \\
+\vspace{-0.25cm}
+ & \\
+
+{\bf Bachelor of Engineering} {\color{gray}in Civil Engineering} & {\it \color{gray} June 2003}\\
+{Nagpur University, India} & First Division
+
+\end{tabular*}
+\end{tabbing}
+%==========================================
+
+
+%==========================================
+% Projects
+%==========================================
+\vspace{-0.75cm}
+\subsection*{\color{dark_blue}PROJECTS}
+\vspace{-0.15cm}
+\hrule
+\vspace{0.1cm}
+
+% 1
+{\bf {\color{drkgray} Network Augmentation}}
+\begin{itemize}
+\item[\mydot] Designed algorithm to reduce Origin Destination (OD) matrix estimation time. Coded MATLAB scripts to process data, perform calculations and test convergence of estimated matrices
+\end{itemize}
+
+% 2
+\noindent {\bf {\color{drkgray} Environmental and Health Impacts of PierPASS Program}}
+\begin{itemize}
+\item[\mydot] Simulated PierPASS scenarios to collect trajectory data. Coded MATLAB scripts to process simulation trajectory data, estimate vehicular emissions, process dispersion model input and output data. Used ArcGIS and R (ggmap) to plot maps
+\end{itemize}
+
+% 3
+\noindent {\bf {\color{drkgray} Freeway Accident Data Analysis}}
+\begin{itemize}
+\item[\mydot] Analyzed 3 years of Los Angeles County freeway vehicular accident data. Coded R and MATLAB scripts to calculate and normalize accident rates, and test hypothesis
+\end{itemize}
+
+%==========================================
+
+
+%==========================================
+% Other Skills and Miscellaneous
+%==========================================
+\vspace{-0.55cm}
+\subsection*{\color{dark_blue} MISCELLANEOUS}
+\vspace{-0.15cm}
+\hrule
+\vspace{0.1cm}
+\begin{itemize}
+\item[\mydot] Peer reviewed papers in transportation research (Complete list available upon request)
+\item[\mydot] Twice Semi-Finalist in The Data Incubator's Data Science Fellowship program
+\item[\mydot] Delivered numerous lectures to students, conference presentations to researchers and industry professionals
+\item[\mydot] Supervised numerous graduate students' M.S. theses and mentored several successful undergraduate students conducting research 
+\item[\mydot] 16$^{th}$ Annual UCTC Student Conference Poster Committee Chair, UC Irvine, 2010
+
+\end{itemize}
+%==========================================
+
+
+
+
+\end{small}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
